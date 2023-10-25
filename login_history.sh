@@ -7,10 +7,6 @@
 
 
 
-
-
-
-
 print_login_history() {
     echo "This is the login history:"
     grep "Accepted password" /var/log/auth.log
