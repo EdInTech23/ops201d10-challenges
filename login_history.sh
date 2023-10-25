@@ -1,3 +1,4 @@
+#!/bin/bash
 # Script Name:                  Variables 101
 # Author:                       Edwin Pretel
 # Date of latest revision:      10/25/2023
@@ -8,7 +9,7 @@
 
 
 
-#!/bin/bash
+
 
 print_login_history() {
     echo "This is the login history:"
