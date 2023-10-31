@@ -5,7 +5,7 @@ is_dir_in_list() {
   search_dir="$1" # dirI am looking for in my list
   for dir in "${directories[@]}"; do
     # check if the dir Im searching for is in the array or not
-    if [ "$dir" == "$search_dir"]; then
+    if ["$dir" == "$search_dir"]; then
       return 0 # true - dir was found!
     fi
   done
