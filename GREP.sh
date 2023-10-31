@@ -17,5 +17,5 @@ echo "Network Adapter Information:"
 lshw | grep -A 16 "network"
 
 # Name of the computer 
-echo " Computer Name"
+echo "Computer Name"
 lshw | grep "ip="
