@@ -10,7 +10,7 @@ Enable-NetFirewallRule -Name "FPS-ICMP4-ERQ-In"
 
 
 
-# Enable Remote management (WinRM)
+# Enable Remote management 
 
 Set-ExecutionPolicy RemoteSigned -Force
 
@@ -18,13 +18,13 @@ Enable-PSRemoting -Force
 
 
 
-# Remove bloatware (Uninstalling specific apps, customize as needed)
+# Remove bloatware 
 
 Get-AppxPackage -AllUsers | Where-Object { $_.Name -like "*bloatware*" } | Remove-AppxPackage -AllUsers
 
 
 
-# Enable Hyper-V (if not already enabled)
+# Enable Hyper-V 
 
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V-All
 
