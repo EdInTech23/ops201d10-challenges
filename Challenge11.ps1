@@ -12,16 +12,14 @@ Enable-NetFirewallRule -Name "FPS-ICMP4-ERQ-In"
 
 # Enable Remote management 
 
-Set-ExecutionPolicy RemoteSigned -Force
-
-Enable-PSRemoting -Force
+enable-psremoting -force
+set-item wsman:\localhost\client\trustedhost -value "ip address of client"
 
 
 
 # Remove bloatware 
 
-Get-AppxPackage -AllUsers | Where-Object { $_.Name -like "*bloatware*" } | Remove-AppxPackage -AllUsers
-
+iex ((new-object system.net.webclient) .downloadstring('https://git.io/debloat'))
 
 
 # Enable Hyper-V 
@@ -32,4 +30,4 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V-All
 
 # Disable SMBv1
 
-Set-SmbServerConfiguration -EnableSMB1Protocol $false
+Set-SmbServerConfiguration -EnableSMB1Protocol $false -force
