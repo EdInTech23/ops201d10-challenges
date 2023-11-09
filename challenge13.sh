@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Install whois on your Ubuntu VM.
 
 # Add to your bash script a sixth option that calls a function to:
 
