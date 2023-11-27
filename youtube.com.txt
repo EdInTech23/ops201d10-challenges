@@ -1,0 +1,32 @@
+
+; <<>> DiG 9.18.18-0ubuntu0.22.04.1-Ubuntu <<>> youtube.com
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 7707
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;youtube.com.			IN	A
+
+;; ANSWER SECTION:
+youtube.com.		260	IN	A	192.178.50.78
+
+;; Query time: 12 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53) (UDP)
+;; WHEN: Wed Nov 08 22:09:42 CST 2023
+;; MSG SIZE  rcvd: 56
+
+Server:		127.0.0.53
+Address:	127.0.0.53#53
+
+Non-authoritative answer:
+Name:	youtube.com
+Address: 192.178.50.78
+Name:	youtube.com
+Address: 2607:f8b0:4008:806::200e
+
+youtube.com has address 192.178.50.78
+youtube.com has IPv6 address 2607:f8b0:4008:806::200e
+youtube.com mail is handled by 0 smtp.google.com.
